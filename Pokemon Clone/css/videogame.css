@@ -1,0 +1,91 @@
+.home-nav {
+  background-color: #ffffff;
+  color: #898989;
+  border-bottom: 5px solid #898989;
+}
+
+.home-nav:hover:before {
+  background-image: url(../img/home-icon.png);
+  transition: ease-in 0.1s;
+}
+
+.home-nav:hover {
+  color: white;
+  background-color: #898989;
+  transition: ease-in 0.1s;
+}
+
+.container{
+    padding: 0;
+}
+
+.home-nav:before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-size: 25px;
+  background-image: url(../img/home-grey-icon.png);
+  background-repeat: no-repeat;
+  margin-left: 1em;
+}
+
+.game-nav {
+    color: white;
+    background-color: #ee6b2f;
+}
+
+.game-nav:before {
+    background-image: url(../img/games-icon.png);
+}
+
+.video-heading{
+    display: flex;
+    justify-content: flex-start;
+    background-color: white;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.video-heading span{
+    /* width: 70%; */
+    margin-left: 1em;
+    margin-top: 1em;
+    font-size: 150%;
+}
+
+.banner-wheat{
+    height: auto;
+}
+
+.banner-yellow{
+    height: auto;
+}
+
+.banner-pink{
+    height: auto;
+}
+
+.banner-purple{
+    height: auto;
+}
+
+.banner-orange{
+    height: auto;
+}
+
+.banner-green{
+    height: auto;
+}
+
+.banner-grey{
+    height: auto;
+    background-color: grey;
+}
+
+.main-col-3{
+    margin-top: -10em;
+}
+
+.box{
+    width: 400px !important;
+}

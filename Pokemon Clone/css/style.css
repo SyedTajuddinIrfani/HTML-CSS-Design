@@ -1,0 +1,761 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #424242 url(../img/body_bg.png);
+}
+
+.first-nav-outer-container {
+  height: 62px;
+  border-bottom: solid 2px #dedede;
+  background-color: #f5f5f5;
+}
+
+.nav-images-menu {
+  list-style: none;
+}
+
+.first-nav-inner-container ul {
+  display: flex;
+  justify-content: center;
+  width: 95%;
+}
+
+.nav-img {
+  border-left: solid 2px #dedede;
+  padding: 9px 10px 8px 10px;
+}
+
+.nav-img-3 {
+  border-right: solid 2px #dedede;
+}
+.nav-img-1 {
+  box-shadow: 0 -6px 7px 1px #666666;
+  border-right: 0;
+  border-left: 0;
+  background-color: #fff;
+}
+
+.nav-banner {
+  padding: 0.4em 0 0 0.4em;
+}
+
+.nav-bar {
+  border-bottom: 2px solid #f0f0f0;
+  background-color: white;
+  height: 87px;
+}
+
+.nav-menus {
+  display: flex;
+  justify-content: center;
+  width: 97%;
+}
+
+.nav-bar ul li {
+  cursor: pointer;
+  height: 87px;
+  overflow: visible;
+  width: 7%;
+  list-style: none;
+  min-width: 100px;
+}
+
+.navbar-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-menu span {
+  margin-top: -0.4em;
+  margin-left: 0.5em;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.3em;
+}
+
+.home-nav {
+  background-color: #898989;
+  color: white;
+}
+.pokedex-nav {
+  border-bottom: 5px solid red;
+}
+
+.game-nav {
+  border-bottom: 5px solid #ee6b2f;
+}
+.card-nav {
+  border-bottom: 5px solid #e6bc2f;
+}
+.tv-nav {
+  border-bottom: 5px solid #4dad5b;
+}
+.event-nav {
+  border-bottom: 5px solid #30a7d7;
+}
+.news-nav {
+  border-bottom: 5px solid #1b53ba;
+}
+
+.home-nav:before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-size: 25px;
+  background-image: url(../img/home-icon.png);
+  background-repeat: no-repeat;
+  margin-left: 1em;
+}
+
+.pokedex-nav:before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-size: 25px;
+  background-image: url(https://img.icons8.com/ios-filled/50/898989/pokeball--v2.png);
+  background-repeat: no-repeat;
+  margin-left: 1em;
+}
+
+.game-nav:before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-size: 25px;
+  background-image: url(../img/games-grey-icon.png);
+  background-repeat: no-repeat;
+  margin-left: 1em;
+}
+
+.card-nav:before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-size: 25px;
+  background-image: url(../img/card-black-icon\ copy.png);
+  background-repeat: no-repeat;
+  margin-left: 1em;
+}
+
+.tv-nav:before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-size: 25px;
+  background-image: url(https://img.icons8.com/ios-filled/50/898989/retro-tv.png);
+  background-repeat: no-repeat;
+  margin-left: 1em;
+}
+
+.event-nav:before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-size: 25px;
+  background-image: url(https://img.icons8.com/ios-glyphs/30/898989/trophy.png);
+  background-repeat: no-repeat;
+  margin-left: 1em;
+}
+
+.news-nav:before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-size: 25px;
+  background-image: url(https://img.icons8.com/ios-filled/50/898989/news.png);
+  background-repeat: no-repeat;
+  margin-left: 1em;
+}
+
+.pokedex-nav:hover:before {
+  background-image: url(../img/pokedex-icon.png);
+  transition: ease-in 0.1s;
+}
+
+.pokedex-nav:hover {
+  color: white;
+  background-color: #e3350d;
+  transition: ease-in 0.1s;
+}
+
+.game-nav:hover:before {
+  background-image: url(../img/games-icon.png);
+  transition: ease-in 0.1s;
+}
+
+.game-nav:hover {
+  color: white;
+  background-color: #ee6b2f;
+  transition: ease-in 0.1s;
+}
+
+.card-nav:hover:before {
+  background-image: url(../img/card-icon.png);
+  transition: ease-in 0.1s;
+}
+
+.card-nav:hover {
+  color: white;
+  background-color: #e6bc2f;
+  transition: ease-in 0.1s;
+}
+
+.tv-nav:hover:before {
+  background-image: url(../img/tv-icon.png);
+  transition: ease-in 0.1s;
+}
+
+.tv-nav:hover {
+  color: white;
+  background-color: #4dad5b;
+  transition: ease-in 0.1s;
+}
+
+.event-nav:hover:before {
+  background-image: url(../img/event-icon.png);
+  transition: ease-in 0.1s;
+}
+
+.event-nav:hover {
+  color: white;
+  background-color: #30a7d7;
+  transition: ease-in 0.1s;
+}
+
+.news-nav:hover:before {
+  background-image: url(../img/news-icon.png);
+  transition: ease-in 0.1s;
+}
+
+.news-nav:hover {
+  color: white;
+  background-color: #1b53ba;
+  transition: ease-in 0.1s;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+.container {
+  background: url(../img/container_bg.png) rgb(255, 255, 255);
+  /* height: 100vh; */
+}
+
+.main-section {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.main-cols {
+  display: flex;
+  width: 70%;
+  background: rgb(255, 255, 255);
+  min-width: 900px;
+  justify-content: center;
+  /* min-height: 0px; */
+}
+
+.main-col-1 {
+  width: 60%;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.main-col-2 {
+  width: 30%;
+  /* background-color: blue; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-card {
+  width: 95%;
+  background-color: yellow;
+}
+
+.col-box {
+  width: 95%;
+  display: flex;
+}
+
+.banner-yellow {
+  background-color: #e6bc2f;
+}
+
+.banner {
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding-bottom: 1.5em;
+  padding-top: 0.25em;
+  width: 100%;
+  height: 120px;
+}
+
+.banner h3 {
+  font-size: 1.2em;
+  color: white;
+}
+
+.banner p {
+  font-size: 0.9rem;
+  color: black;
+}
+
+.banner h3,
+p {
+  margin: 0.3em 0.5em 0.1em 1em;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.banner-yellow:hover {
+  transition: ease-in 0.2s;
+  background-color: #c4a02b;
+}
+
+.banner-orange:hover {
+  transition: ease-in 0.2s;
+  background-color: #ca4304;
+}
+.banner-lightblue:hover {
+  transition: ease-in 0.2s;
+  background-color: #0090c9;
+}
+
+.card-1-box {
+  width: 49.5%;
+}
+
+.banner-orange {
+  background-color: #ee6b2f;
+}
+
+.banner-lightblue {
+  background-color: #30a7d7;
+}
+
+.card-box {
+  width: 95%;
+}
+
+.card-box-5 {
+  width: 65%;
+  display: flex;
+}
+
+.banner-purple {
+  background-color: #855ac9;
+}
+
+.banner-purple:hover {
+  transition: ease-in 0.2s;
+  background-color: #752ce9;
+}
+
+.banner-blue {
+  background-color: #1b53ba;
+}
+
+.banner-blue:hover {
+  transition: ease-in 0.2s;
+  background-color: #0c5aeb;
+}
+
+.banner-green {
+  background-color: #4dad5b;
+}
+
+.banner-green:hover {
+  transition: ease-in 0.2s;
+  background-color: #1a9c2e;
+}
+
+.card-box-5 img {
+  height: auto;
+  width: 150px;
+}
+
+.main-col-2 .card-box {
+  margin: 0.73em;
+  width: 100%;
+}
+
+.main-cols-mob-view {
+  display: none;
+  flex-direction: column;
+  width: 70%;
+  margin: 1em;
+}
+
+
+.slider-title {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+.slider-title h3 {
+  background-color: #232323;
+  color: #919191;
+  float: left;
+  font-size: 125%;
+  margin-top: 5px;
+  margin-bottom: 0;
+  position: relative;
+  padding: 11px 20px 8px;
+  text-transform: none;
+  vertical-align: middle;
+  width: auto;
+  border-radius: 5px 5px 0 0;
+}
+
+.main-section-2{
+  margin-top: 2em;
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+
+.main-cols-2{
+  display: flex;
+  width: 70%;
+  background: rgb(255, 255, 255);
+  min-width: 900px;
+  justify-content: center;
+  /* height: 900px; */
+}
+
+.banner-red{
+  background-color: red;
+  height: 200px;
+  font-size: 1.1rem;
+}
+
+.banner-wheat{
+  background-color: #c7aa79;
+  height: 200px;
+  font-size: 1.1rem;
+}
+
+.banner-pink{
+  background-color: #ff90c4;
+  height: 200px;
+  font-size: 1.1rem;
+}
+
+.banner-darkblue{
+  background-color: #30a7d7;
+  height: 200px;
+  font-size: 1.1rem;
+}
+
+.banner-darkorange{
+  background-color: #ee6b2f;
+  height: 200px;
+  font-size: 1.1rem;
+}
+
+.banner-blues{
+  background-color: #1b53ba;
+  height: 200px;
+  font-size: 1.1rem;
+}
+
+.banner-red p{
+  font-size: 1rem;
+}
+
+.main-col-3{
+	/* background-color: red; */
+	display: flex;
+	flex-direction: column;
+  justify-content: center;
+	width: 32%;
+  row-gap: 1em;
+}
+
+.main-col-4{
+  display: flex;
+	flex-direction: column;
+	/* background-color: black; */
+	width: 32%;
+  margin-top: 2em;
+}
+
+.main-col-5{
+  display: flex;
+	flex-direction: column;
+	/* background-color: aquamarine; */
+	width: 32%;
+  margin-top: 2.5em;
+  row-gap: 1em;
+  margin-bottom: 1em;
+
+}
+
+.section-title{
+  margin: 0.5em 0;
+
+}
+
+.news-head{
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  padding-bottom: 1.5em;
+  padding-top: 1em;
+  width: 95%;
+  height: 60px;
+  background-color: #ee6b2f;
+  text-align: center;
+}
+
+.news-desc{
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding-bottom: 1.5em;
+  padding-top: 0.25em;
+  width: 95%;
+  height: 60px;
+  background-color: #30a7d7;
+}
+
+.footer{
+  margin-top: 2em;
+  width: 100%;
+  background-color: #1f1f1f;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-boxes{
+  display: flex;
+  width: 65%;
+  /* background-color: white; */
+}
+
+.footer-box-1{
+  width: 32%;
+  padding: 1.2em;
+  border-right: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  min-width: fit-content;
+}
+.footer-box-2{
+  /* display: flex; */
+  width: 32%;
+  padding: 1.2em;
+  border-right: 2px solid black;
+  min-width: fit-content;
+}
+.social-i{
+  width: 48px;
+}
+.footer-box-1 h3{
+  font-size: 125%;
+  color: white;
+}
+
+.footer-box-1 li{
+  font-size: 100%;
+  color: grey;
+}
+
+.footer-box-3{
+  width: 32%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-width: 200px;
+
+}
+
+.first-col{
+  display: flex;
+  align-items: center;
+}
+
+.first-col img{
+  width: 150px;
+  height: 60px;
+}
+
+.copyright{
+  color: grey;
+  font-size: 70%;
+}
+
+.term li{
+  list-style: none;
+  font-size: 60%;
+  color: grey;
+}
+
+.main-cols-2-mob-view{
+  display: none;
+}
+
+.footer-mob-view{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 968px) {
+  .nav-bar {
+    background-color: black;
+  }
+
+  .navbar-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .nav-bar ul li {
+    cursor: pointer;
+    height: 60px;
+    overflow: visible;
+    width: 104.4%;
+    list-style: none;
+    position: relative;
+    left: -40px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    min-width: none;
+  }
+
+  .nav-menus {
+    position: fixed;
+    left: -100%;
+    top: 9em;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+
+  .nav-menus.active {
+    left: 0;
+  }
+
+  .nav-item {
+    margin: 2.5rem 0;
+  }
+
+  #hm {
+    display: block;
+    cursor: pointer;
+    float: right;
+    position: relative;
+    top: 20px;
+    right: 20px;
+  }
+
+  #hm.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  #hm.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  #hm.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .main-cols {
+    display: none;
+  }
+
+  .main-cols-mob-view {
+    display: flex;
+  }
+
+  .card-box {
+    margin: 0.7em;
+  }
+  .card-box-5 {
+    width: 95%;
+  }
+
+  .card-box-5 img {
+    height: 120px;
+    width: 140px;
+  }
+  .main-cols-2{
+    display: none;
+  }
+
+  .main-cols-2-mob-view{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin-bottom: 1em;
+  }
+  .footer-mob-view{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer{
+    display: none;
+  }
+
+  .footer-box-1, .footer-box-2, .footer-box-3{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .banner-yellow p {
+    display: none;
+  }
+}

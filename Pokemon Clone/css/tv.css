@@ -1,0 +1,25 @@
+.game-nav {
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+}
+
+.game-nav:before {
+    background-image: url(../img/games-grey-icon.png);
+}
+
+.tv-nav {
+    color: white;
+    background-color: #4dad5b;
+  }
+  
+  .tv-nav:before {
+    background-image: url(../img/tv-icon.png);
+  }
+  
+  .banner-blues{
+      height: auto;
+  }
+
+  .banner-red{
+      height: auto;
+  }

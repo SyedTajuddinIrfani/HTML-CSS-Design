@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      The Official Pokémon Website | Pokemon.com | Explore the World of Pokémon
+    </title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../slider/style1.css" />
+    <link rel="stylesheet" type="text/css" href="../slider/lightslider.css" />
+    <script type="text/javascript" src="../slider/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="../slider/lightslider.js"></script>
+    <link rel="stylesheet" href="../css/pokedex.css" />
+  </head>
+  <body>
+    <div class="first-nav-outer-container">
+      <div class="first-nav-inner-container">
+        <ul class="nav-images-menu">
+          <li class="nav-img nav-img-1">
+            <a href="index.html" class="" target="">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/misc/gus/buttons/logo-pokemon-79x45.png"
+                alt="site_slug"
+                class="img-fluid"
+              />
+            </a>
+          </li>
+          <li class="nav-img nav-img-2">
+            <a
+              class="gus-pokemon-center-link"
+              target="_blank"
+              rel="https://www.pokemoncenter.com/?utm_source=p&amp;utm_medium=referral&amp;utm_term=GUS"
+              tabindex="0"
+            >
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/misc/gus/buttons/logo-pokemoncenter-79x45.png"
+                alt="site_slug"
+                class="img-fluid"
+              />
+            </a>
+          </li>
+          <li class="nav-img nav-img-3">
+            <a
+              href="https://www.pokemon.com/us/pokemon-tcg/play-online/"
+              class=""
+              target=""
+            >
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/misc/gus/buttons/logo-tcgo-79x45.png"
+                alt="site_slug"
+                class="img-fluid"
+              />
+            </a>
+          </li>
+          <li class="nav-banner">
+            <a href="https://legends.pokemon.com/en-us/" class="" target="">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/misc/gus/promotions/legends-arceus-176x50-us.jpg"
+                class="img-fluid"
+              />
+            </a>
+          </li>
+          <li class="nav-banner">
+            <a href="https://tcg.pokemon.com/en-us/" class="" target="">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/misc/gus/promotions/swsh09-gus-175-en.jpg"
+                class="img-fluid"
+              />
+            </a>
+          </li>
+          <li class="nav-banner">
+            <a href="https://unite.pokemon.com/en-us/" class="" target="">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/misc/gus/promotions/unite-176x50.jpg"
+                class="img-fluid"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="nav-bar">
+      <nav>
+        <ul class="nav-menus">
+          <li class="home-nav navbar-menu" onclick="location='../index.html'">
+            <span class="link">Home</span>
+          </li>
+          <li class="pokedex-nav navbar-menu" onclick="location='pokedex.html'">
+            <span>Pokedex</span>
+          </li>
+          <li class="game-nav navbar-menu" onclick="location='videogame.html'">
+            <span>Video Games & Apps</span>
+          </li>
+          <li class="card-nav navbar-menu" onclick="location='card.html'">
+            <span>Trading Card Game</span>
+          </li>
+          <li class="tv-nav navbar-menu" onclick="location='tv.html'">
+            <span>Pokemon TV</span>
+          </li>
+          <li class="event-nav navbar-menu" onclick="location='index.html'">
+            <span>Play! Pokémon Events</span>
+          </li>
+          <li class="news-nav navbar-menu" onclick="location='index.html'">
+            <span>News</span>
+          </li>
+        </ul>
+        <div class="hamburger" id="hm">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </div>
+    <div class="container">
+      <div class="main-section pokedex-head">
+        <div class="heading"><span>Pokédex</span></div>
+      </div>
+      <div class="search-box">
+        <div class="search-box-options">
+          <div class="search-option-box">
+            <div class="filter-text-search">
+              <label>Name or Number</label><br />
+              <input
+                data-type="name"
+                type="text"
+                id="searchInput"
+                class="button-white"
+              />
+              <button>
+                <img class="img-fluid" src="../img/search-icon.png" alt="" />
+              </button>
+            </div>
+            <p class="subtitle">
+              Use the Advanced Search to explore Pokémon by type, weakness,
+              Ability, and more!
+            </p>
+          </div>
+          <div class="search-option-toast">
+            <div class="banner banner-green">
+              <span
+                >Search for a Pokémon by name or using its National Pokédex
+                number.</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="advance-search-box">
+          <span>Show Advanced Search</span>
+        </div>
+      </div>
+      <div class="main-section pokemon-box">
+        <div class="pokemon-search-box">
+          <div class="pokemon-box-search-options">
+            <button class="surprise">Surprise Me!</button>
+            <select name="filter-search" id="" class="filter-search">
+              <option value="Lowest Number (First)">
+                Highest Number (First)
+              </option>
+              <option value="Highest Number (First)">
+                Lowest Number (First)
+              </option>
+              <option value="A-Z">A-Z</option>
+              <option value="Z-A">Z-A</option>
+            </select>
+          </div>
+          <div class="pokemon-list-wrapper">
+            <ul class="pokemon-list">
+              <li>
+                <div class="pokemon-card">
+                  <figure>
+                    <a href="#">
+                      <img
+                        class="img-fluid"
+                        src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png"
+                      />
+                    </a>
+                  </figure>
+
+                  <div class="pokemon-info">
+                    <p class="id"><span class="number-prefix">#</span>001</p>
+                    <h5>Bulbasaur</h5>
+
+                    <div class="abilities">
+                      <span class="pill background-color-grass">Grass</span>
+                      <span class="pill background-color-poison">Poison</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="pokemon-card">
+                  <figure>
+                    <a href="#">
+                      <img
+                        class="img-fluid"
+                        src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/002.png"
+                      />
+                    </a>
+                  </figure>
+
+                  <div class="pokemon-info">
+                    <p class="id"><span class="number-prefix">#</span>002</p>
+                    <h5>Ivysaur</h5>
+
+                    <div class="abilities">
+                      <span class="pill background-color-grass">Grass</span>
+                      <span class="pill background-color-poison">Poison</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="pokemon-card">
+                  <figure>
+                    <a href="#">
+                      <img
+                        class="img-fluid"
+                        src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/003.png"
+                      />
+                    </a>
+                  </figure>
+
+                  <div class="pokemon-info">
+                    <p class="id"><span class="number-prefix">#</span>003</p>
+                    <h5>Venusaur</h5>
+
+                    <div class="abilities">
+                      <span class="pill background-color-grass">Grass</span>
+                      <span class="pill background-color-poison">Poison</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="pokemon-card">
+                  <figure>
+                    <a href="#">
+                      <img
+                        class="img-fluid"
+                        src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/004.png"
+                      />
+                    </a>
+                  </figure>
+
+                  <div class="pokemon-info">
+                    <p class="id"><span class="number-prefix">#</span>004</p>
+                    <h5>Charmander</h5>
+
+                    <div class="abilities">
+                      <span class="pill background-color-fire">Fire</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="pokemon-card">
+                  <figure>
+                    <a href="#">
+                      <img
+                        class="img-fluid"
+                        src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/005.png"
+                      />
+                    </a>
+                  </figure>
+
+                  <div class="pokemon-info">
+                    <p class="id"><span class="number-prefix">#</span>005</p>
+                    <h5>Charmeleon</h5>
+
+                    <div class="abilities">
+                      <span class="pill background-color-fire">Fire</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="pokemon-card">
+                  <figure>
+                    <a href="#">
+                      <img
+                        class="img-fluid"
+                        src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/006.png"
+                      />
+                    </a>
+                  </figure>
+
+                  <div class="pokemon-info">
+                    <p class="id"><span class="number-prefix">#</span>006</p>
+                    <h5>Charizard</h5>
+
+                    <div class="abilities">
+                      <span class="pill background-color-fire">Fire</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="pokemon-card">
+                  <figure>
+                    <a href="#">
+                      <img
+                        class="img-fluid"
+                        src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/007.png"
+                      />
+                    </a>
+                  </figure>
+
+                  <div class="pokemon-info">
+                    <p class="id"><span class="number-prefix">#</span>007</p>
+                    <h5>Squirtle</h5>
+
+                    <div class="abilities">
+                      <span class="pill background-color-water">Water</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="pokemon-card">
+                  <figure>
+                    <a href="#">
+                      <img
+                        class="img-fluid"
+                        src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/008.png"
+                      />
+                    </a>
+                  </figure>
+
+                  <div class="pokemon-info">
+                    <p class="id"><span class="number-prefix">#</span>008</p>
+                    <h5>Wartotle</h5>
+
+                    <div class="abilities">
+                      <span class="pill background-color-water">Water</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="pokemon-card">
+                  <figure>
+                    <a href="#">
+                      <img
+                        class="img-fluid"
+                        src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/009.png"
+                      />
+                    </a>
+                  </figure>
+
+                  <div class="pokemon-info">
+                    <p class="id"><span class="number-prefix">#</span>009</p>
+                    <h5>Blastoise</h5>
+
+                    <div class="abilities">
+                      <span class="pill background-color-water">Water</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="pokemon-card">
+                  <figure>
+                    <a href="#">
+                      <img
+                        class="img-fluid"
+                        src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/010.png"
+                      />
+                    </a>
+                  </figure>
+
+                  <div class="pokemon-info">
+                    <p class="id"><span class="number-prefix">#</span>010</p>
+                    <h5>Caterpie</h5>
+
+                    <div class="abilities">
+                      <span class="pill background-color-bug">Bug</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="pokemon-card">
+                  <figure>
+                    <a href="#">
+                      <img
+                        class="img-fluid"
+                        src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/011.png"
+                      />
+                    </a>
+                  </figure>
+
+                  <div class="pokemon-info">
+                    <p class="id"><span class="number-prefix">#</span>011</p>
+                    <h5>Metapod</h5>
+
+                    <div class="abilities">
+                      <span class="pill background-color-bug">Bug</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="pokemon-card">
+                  <figure>
+                    <a href="#">
+                      <img
+                        class="img-fluid"
+                        src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/012.png"
+                      />
+                    </a>
+                  </figure>
+
+                  <div class="pokemon-info">
+                    <p class="id"><span class="number-prefix">#</span>012</p>
+                    <h5>Butterfree</h5>
+
+                    <div class="abilities">
+                      <span class="pill background-color-bug">Bug</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="main-section">
+        <div class="pokedex-main-cols">
+          <div class="pokedex-cols">
+            <div class="card-cols">
+              <a href="#">
+                <div class="card-box card-box-8">
+                  <div class="tile-image-wrapper">
+                    <img
+                      src="../img/pokemon-legends-arceus-169-en.gif"
+                      class="img-fluid"
+                      alt="Work Out Weakness in Your Pokémon TCG Decks"
+                    />
+                  </div>
+                  <div class="banner banner-wheat">
+                    <h3>Making the Most of Massive Mass Outbreaks</h3>
+                    <p>
+                      Help track down Shiny Pokémon or complete your
+                      <em>Pokémon Legends: Arceus</em> Pokédex with these
+                      massively useful tips.
+                    </p>
+                  </div>
+                </div>
+              </a>
+              <a href="#">
+                <div class="card-box card-box-7">
+                  <div class="tile-image-wrapper">
+                    <img
+                      src="../img/pokemon-go-169.jpg"
+                      class="img-fluid"
+                      alt="Stufful Flails Its Way into Pokémon GO"
+                    />
+                  </div>
+                  <div class="banner banner-darkblue">
+                    <h3>Stufful Flails Its Way into Pokémon GO</h3>
+                    <p>
+                      The April Community Day features a new Pokémon debut,
+                      exciting bonuses, and Special Research.
+                    </p>
+                  </div>
+                </div>
+              </a>
+              <a href="#">
+                <div class="card-box card-box-7">
+                  <div class="tile-image-wrapper">
+                    <img
+                      src="../img/sword-shield-169-en.jpg"
+                      class="img-fluid"
+                      alt="Work Out Weakness in Your Pokémon TCG Decks"
+                    />
+                  </div>
+                  <div class="banner banner-darkblue">
+                    <h3>
+                      Take on the World in the Global Challenge 2022 Spring
+                      Online Competition
+                    </h3>
+                    <p>
+                      Register now to battle <em>Pokémon Sword</em> and
+                      <em>Pokémon Shield</em> players for BP and Championship
+                      Points.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="pokedex-main-cols-mob-view">
+              <a href="#">
+                <div class="card-box card-box-8">
+                  <div class="tile-image-wrapper">
+                    <img
+                      src="../img/pokemon-legends-arceus-169-en.gif"
+                      class="img-fluid"
+                      alt="Work Out Weakness in Your Pokémon TCG Decks"
+                    />
+                  </div>
+                  <div class="banner banner-wheat">
+                    <h3>Making the Most of Massive Mass Outbreaks</h3>
+                    <p>
+                      Help track down Shiny Pokémon or complete your
+                      <em>Pokémon Legends: Arceus</em> Pokédex with these
+                      massively useful tips.
+                    </p>
+                  </div>
+                </div>
+              </a>
+              <a href="#">
+                <div class="card-box card-box-7">
+                  <div class="tile-image-wrapper">
+                    <img
+                      src="../img/pokemon-go-169.jpg"
+                      class="img-fluid"
+                      alt="Stufful Flails Its Way into Pokémon GO"
+                    />
+                  </div>
+                  <div class="banner banner-darkblue">
+                    <h3>Stufful Flails Its Way into Pokémon GO</h3>
+                    <p>
+                      The April Community Day features a new Pokémon debut,
+                      exciting bonuses, and Special Research.
+                    </p>
+                  </div>
+                </div>
+              </a>
+              <a href="#">
+                <div class="card-box card-box-7">
+                  <div class="tile-image-wrapper">
+                    <img
+                      src="../img/sword-shield-169-en.jpg"
+                      class="img-fluid"
+                      alt="Work Out Weakness in Your Pokémon TCG Decks"
+                    />
+                  </div>
+                  <div class="banner banner-darkblue">
+                    <h3>
+                      Take on the World in the Global Challenge 2022 Spring
+                      Online Competition
+                    </h3>
+                    <p>
+                      Register now to battle <em>Pokémon Sword</em> and
+                      <em>Pokémon Shield</em> players for BP and Championship
+                      Points.
+                    </p>
+                  </div>
+                </div>
+              </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+        <div class="footer-boxes">
+          <div class="footer-box-1">
+            <h3>The Pokemon Company</h3>
+            <ul>
+              <li>What's New</li>
+              <li>Pokemon Parents Online</li>
+              <li>Customer Service</li>
+              <li>About Our Company</li>
+              <li>Pokemon Careers</li>
+              <li>Select a Country/Region</li>
+              <li>Pokemon Press Site</li>
+            </ul>
+          </div>
+          <div class="footer-box-2">
+            <img
+              class="social-i img-fluid"
+              src="https://img.icons8.com/color/48/000000/facebook.png"
+              alt=""
+            />
+            <img
+              class="social-i img-fluid"
+              src="https://img.icons8.com/fluency/48/000000/youtube-play.png"
+              alt=""
+            />
+            <img
+              class="social-i img-fluid"
+              src="https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-twitter-social-media-justicon-flat-justicon.png"
+              alt=""
+            />
+            <img
+              class="social-i img-fluid"
+              src="https://img.icons8.com/color/48/000000/instagram-new--v1.png"
+              alt=""
+            />
+            <img
+              class="social-i img-fluid"
+              src="https://img.icons8.com/color/48/000000/pinterest--v6.png"
+              alt=""
+            />
+          </div>
+          <div class="footer-box-3">
+            <div class="first-col">
+              <img
+                src="../img/thepokemoncompanyinternational-seal-1596150491.png"
+                alt=""
+                class="img-fluid"
+              />
+              <ul class="term">
+                <li>Terms of Use</li>
+                <li>Privacy Notice</li>
+                <li>Cookie Page</li>
+                <li>Legal Info</li>
+                <li>Security</li>
+              </ul>
+            </div>
+            <div class="second-col">
+              <p class="copyright">
+                ©2022 Pokémon. ©1995 - 2022 Nintendo/Creatures Inc./GAME FREAK
+                inc. TM, ®Nintendo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-mob-view">
+        <div class="footer-box-1">
+          <h3>The Pokemon Company</h3>
+          <ul>
+            <li>What's New</li>
+            <li>Pokemon Parents Online</li>
+            <li>Customer Service</li>
+            <li>About Our Company</li>
+            <li>Pokemon Careers</li>
+            <li>Select a Country/Region</li>
+            <li>Pokemon Press Site</li>
+          </ul>
+        </div>
+        <div class="footer-box-2">
+          <img
+            class="social-i img-fluid"
+            src="https://img.icons8.com/color/48/000000/facebook.png"
+            alt=""
+          />
+          <img
+            class="social-i img-fluid"
+            src="https://img.icons8.com/fluency/48/000000/youtube-play.png"
+            alt=""
+          />
+          <img
+            class="social-i img-fluid"
+            src="https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-twitter-social-media-justicon-flat-justicon.png"
+            alt=""
+          />
+          <img
+            class="social-i img-fluid"
+            src="https://img.icons8.com/color/48/000000/instagram-new--v1.png"
+            alt=""
+          />
+          <img
+            class="social-i img-fluid"
+            src="https://img.icons8.com/color/48/000000/pinterest--v6.png"
+            alt=""
+          />
+        </div>
+        <div class="footer-box-3">
+          <div class="first-col">
+            <img
+              src="../img/thepokemoncompanyinternational-seal-1596150491.png"
+              alt=""
+              class="img-fluid"
+            />
+            <ul class="term">
+              <li>Terms of Use</li>
+              <li>Privacy Notice</li>
+              <li>Cookie Page</li>
+              <li>Legal Info</li>
+              <li>Security</li>
+            </ul>
+          </div>
+          <div class="second-col">
+            <p class="copyright">
+              ©2022 Pokémon. ©1995 - 2022 Nintendo/Creatures Inc./GAME FREAK inc.
+              TM, ®Nintendo.
+            </p>
+          </div>
+        </div>
+      </div>
+    <script src="../js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+.home-nav {
+  background-color: #ffffff;
+  color: #898989;
+  border-bottom: 5px solid #898989;
+}
+
+.home-nav:hover:before {
+  background-image: url(../img/home-icon.png);
+  transition: ease-in 0.1s;
+}
+
+.home-nav:hover {
+  color: white;
+  background-color: #898989;
+  transition: ease-in 0.1s;
+}
+
+.container{
+    padding: 0;
+}
+
+.home-nav:before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-size: 25px;
+  background-image: url(../img/home-grey-icon.png);
+  background-repeat: no-repeat;
+  margin-left: 1em;
+}
+
+.card-nav {
+  color: white;
+  background-color: #e6bc2f;
+}
+
+.card-nav:before {
+  background-image: url(../img/card-icon.png);
+}
+
+.banner-red{
+    height: auto;
+}
+
+.banner-darkgrey{
+    background-color: #161616;
+    height: auto;
+}
+
+.box{
+    width: 220px !important;
+}
+
+.slide-img{
+	height: 300px;
+	position:relative;
+}
+
+.detail-box{
+	height: 80px;
+}
+
+.main-col-3{
+    margin-top: 3.5em;
+    margin-bottom: 1em;
+}
+
+
+@media only screen and (max-width: 968px){
+    .footer-mob-view{
+        background: black;
+    }
+}
